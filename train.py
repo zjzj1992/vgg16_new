@@ -155,7 +155,7 @@ def validate(model, validloader, criterion, device):
         accuracy += equality.type(torch.FloatTensor).mean()
     return loss, accuracy
 
-#可以将训练好的模型存储起来
+#存储训练好的模型
 def save_model(arch,model,input_size,output_size,hidden_layers,learning_rate,classifier,optimizer,train_dataset,filepath,modelpath):
     model.class_to_idx = train_dataset.class_to_idx
     checkpoint = {'arch': arch,
