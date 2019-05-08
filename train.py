@@ -1,10 +1,8 @@
 import numpy as np
 import torch
-import torch.nn.functional as F
 
 from torch import nn,optim
 from collections import OrderedDict
-from torch.autograd import Variable
 from torchvision import datasets,transforms,models
 
 #定义神经网络
